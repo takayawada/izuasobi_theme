@@ -1,0 +1,107 @@
+/*Theme Name: 伊豆あそび
+description: 伊豆のブログです
+Author: */
+
+
+body { 
+	font-family: "Segoe UI", Verdana, "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+	 }
+
+
+
+
+
+
+
+
+
+.cover {
+  padding: 270px 0 0 0;
+  background-image: url("image5/topkill.jpg");
+  background-position:center ;                    
+  background-size:cover;                                 
+    width:100%;                                            
+    height:650px;              
+  color: white;
+  text-align: center;
+
+
+}
+
+.cover h1 {
+  opacity: 0.8;
+  font-size: 50px;
+ 
+}
+
+
+
+header {
+  height: 110px;
+  width: 100%;
+  background-color: rgba(34, 49, 52, 0.9);
+  position :fixed;
+  top: 0;
+  z-index: 10;
+}
+
+
+
+.single{
+	margin-top: 60px;
+	width: 700px;
+	float: left;
+}
+
+.category{
+    margin-top: 60px;
+
+}
+
+
+
+
+
+.sidebar{
+	float: left;
+
+}
+
+.side{
+	list-style: none;
+	margin: 120px 120px 0 0;
+	float: right;
+
+
+}
+
+.footer{
+	background-color: rgba(34, 49, 52, 0.9);
+	list-style: none;
+	clear: both;
+
+}
+
+ul{
+	list-style: none;
+}
+
+.tagcloud{
+
+	font-size: 30px;
+}
+
+.tagcloud a{
+	
+	display: block;
+
+
+}
+
+
+.breadcrumb ul li{
+	/*display: inline-block;*/
+	/*display: flex;*/
+	float:left;
+}
+
