@@ -35,6 +35,37 @@
 
 
 
+	 function register_stylesheet() { //読み込むCSSを登録する
+	wp_register_style('reset', get_template_directory_uri().'/css/reset.css');
+	wp_register_style('slick', get_template_directory_uri().'/js/slick/slick.css');
+	wp_register_style('style', get_template_directory_uri().'/style.css');
+}
+function add_stylesheet() { //登録したCSSを以下の順番で読み込む
+	register_stylesheet();
+	wp_enqueue_style('reset', '', array(), '1.0', false);
+	wp_enqueue_style('slick', '', array(), '1.0', false);
+	wp_enqueue_style('style', '', array(), '1.0', false);
+}
+add_action('wp_enqueue_scripts', 'add_stylesheet');
+
+/* スクリプトの読み込み
+---------------------------------------------------------- */
+function register_script(){ //読み込むJSを登録する
+	wp_register_script('slick', get_template_directory_uri().'/js/slick/slick.min.js');
+	wp_register_script('functions', get_template_directory_uri().'/js/functions.js');
+}
+function add_script(){ //登録したJSを以下の順番で読み込む
+	register_script();
+	wp_enqueue_script('slick', '', array(), '1.0', false);
+	wp_enqueue_script('functions', '', array(), '1.0', false);
+}
+add_action('wp_print_scripts','add_script');
+
+
+
+
+
+
 
 
 
@@ -273,9 +304,6 @@
 
 
 
-　　　
-
-	
 
 
 

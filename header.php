@@ -1,4 +1,4 @@
-<header>
+
       <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top pt-0 ">
         <a class="navbar-brand " href="#">
           <img  src="<?php bloginfo('template_url'); ?>/image5/icon.jpg">
@@ -6,10 +6,10 @@
         <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon "></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-end mr-5 pr-5" id="navbarNavDropdown">
-          <ul class="navbar-nav bg-dark">
+        <div class="collapse navbar-collapse justify-content-end mr-5 pr-5 " id="navbarNavDropdown">
+          <ul class="navbar-nav bg-dark ">
             <li class="nav-item dropdown ">
-              <a class="nav-link dropdown-toggle text-white mr-3 pr-3" href="/izuasobi/category/kannkousupotto/" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link dropdown-toggle text-white mr-3 pr-3 " href="/izuasobi/category/kannkousupotto/" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 温泉
               </a>
               <div class="dropdown-menu bg-dark  " aria-labelledby="navbarDropdownMenuLink">
@@ -62,5 +62,4 @@
           </ul>
         </div>
       </nav>
-      <?php custom_breadcrumb(); ?>
-</header>
+      

@@ -14,42 +14,43 @@
   </head>
   <body>
 
-  <header>
-  <?php get_header(); ?>
-  </header>
+  　<header>
+    <?php get_header(); ?>
+    </header>
 
+    <div id="breadcrumb ">
+    <div class=" mt-5   pt-5 "> 
+    <?php custom_breadcrumb(); ?>
+    </div>
+    </div>
+    
 
+  <div id="wrapper ">
+      
 
-	<div id="wrapper ">
-			
+         <div class="single mt-5 pt-5 pl-5 ml-5 ">
 
-    <div class="single mt-10 mx-5 px-5 pt-5">
+      <?php while (have_posts()) : the_post(); ?>
+       <h2>
+        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+       </h2>
+       <?php the_content(); ?>
 
-			<?php while (have_posts()) : the_post(); ?>
-			 <h2>
-			 	<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-			 </h2>
-			 <?php the_content(); ?>
+         <?php endwhile; ?> 
+         </div>
+    </div>
 
-		  <?php endwhile; ?>	
-
-			
-     </div>
-
-  </div>
-
-
-   <div id="sidebar">
+    <div id="sidebar">
       <div class="side">
           <?php dynamic_sidebar(1); ?>
           <?php dynamic_sidebar(2); ?>
       </div>    
   </div>
     
-  <div id="footer"
-   <?php get_footer(); ?>
-  </div>
-   
+    <div id="footer"
+     <?php get_footer(); ?>
+    </div>
+  
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

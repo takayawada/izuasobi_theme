@@ -1,107 +1,1 @@
-/*Theme Name: 伊豆あそび
-description: 伊豆のブログです
-Author: */
-
-
-body { 
-	font-family: "Segoe UI", Verdana, "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-	 }
-
-
-
-
-
-
-
-
-
-.cover {
-  padding: 270px 0 0 0;
-  background-image: url("image5/topkill.jpg");
-  background-position:center ;                    
-  background-size:cover;                                 
-    width:100%;                                            
-    height:650px;              
-  color: white;
-  text-align: center;
-
-
-}
-
-.cover h1 {
-  opacity: 0.8;
-  font-size: 50px;
- 
-}
-
-
-
-header {
-  height: 110px;
-  width: 100%;
-  background-color: rgba(34, 49, 52, 0.9);
-  position :fixed;
-  top: 0;
-  z-index: 10;
-}
-
-
-
-.single{
-	margin-top: 60px;
-	width: 700px;
-	float: left;
-}
-
-.category{
-    margin-top: 60px;
-
-}
-
-
-
-
-
-.sidebar{
-	float: left;
-
-}
-
-.side{
-	list-style: none;
-	margin: 120px 120px 0 0;
-	float: right;
-
-
-}
-
-.footer{
-	background-color: rgba(34, 49, 52, 0.9);
-	list-style: none;
-	clear: both;
-
-}
-
-ul{
-	list-style: none;
-}
-
-.tagcloud{
-
-	font-size: 30px;
-}
-
-.tagcloud a{
-	
-	display: block;
-
-
-}
-
-
-.breadcrumb ul li{
-	/*display: inline-block;*/
-	/*display: flex;*/
-	float:left;
-}
-
+/*Theme Name: 伊豆あそびdescription: 伊豆のブログですAuthor: */.wrapper { 	font-family: "Segoe UI", Verdana, "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;　　　color: white;	 }@media screen and (max-width:767px) {    /*　画面サイズが767px以下の場合読み込む　*/     .wrapper { font-size:24px;}}@media screen and (min-width:768px){    /*　画面サイズが768px以上の場合読み込む　*/     .wrapper{ font-size:40px;}}@media screen and (min-width:480px) {  #nav-open {    display:none;  }}.head li{     color: whit;}.site-title {  text-align: left;} .site-title h1 {  margin: 0;  padding: 0 ;  /*line-height: 1;*/} .site-title h1 img {  width: auto;  height: 90px;   position: fixed;   z-index: 20;} .site-title a {  display: block;}.menu {  background-color: rgba(0, 0, 0, 0.8);  width: 100%;  height: 155px;  position: fixed;   top: 0;     text-align: right;  z-index: 10;  padding: 50px 80px 0 0 ;}/* 親メニューをinline-blockにしてセンターに配置 */.menu > .menu-item {  display: inline-block;  padding: .5em .3em;    }/* リストの記号を消去 */.menu-item {  list-style-type: none;}/* サブメニューをabsoluteにするため、親メニューをrelativeに */.menu-item-has-children {  position: relative;}/* 親メニューにマウスオーバーしたときにカーソルを変更 */.menu-item-has-children:hover {  cursor: pointer;}/* 子を持つ親メニューにマウスオーバーしたときサブメニューを表示 */.menu-item-has-children:hover .sub-menu {  display: block;}/* サブメニューをabsoluteにして親メニューの下に配置。スタイルは適宜調整してください */.sub-menu {  display: none;  position: absolute;  top: 100%;  left: 0;  width: 200px; background-color: rgba(34, 49, 52, 0.9);  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);  padding: 0;}/* サブメニューの境目をわかりやすくするため、一番下の項目以外下線を引いた */.sub-menu > .menu-item:not(:last-child) {  border-bottom: 1px solid #eee;}/* サブニューのリンクタグをmenu-itemの大きさと合わせ、クリックしやすいようにした */.sub-menu > .menu-item a {  display: inline-block;  width: 100%;  height: 100%;  padding: .5em .5em ;  text-align: left;}/* サブメニューにマウスオーバーしたときリンクの背景色とテキストカラーを変更 */.sub-menu > .menu-item a:hover {  background: white;  color: black;}.cover {  padding: 270px 0 0 0;  background-image: url("image5/topkill.jpg");  background-position:center ;                      background-size:cover;                                     width:100%;                                                height:650px;                color: white;  text-align: center;}.cover h1 {  opacity: 0.8;  font-size: 50px; }/*header {  height: 110px;  width: 100%;  background-color: rgba(34, 49, 52, 0.9);    position :fixed;  top: 0;  z-index: 10;}*/.single{	margin-top: 60px;	width: 700px;	float: left;}.category{    margin-top: 60px;}.sidebar{	float: left;}.side{	list-style: none;	margin: 120px 120px 0 0;	float: right;}.footer{	background-color: rgba(34, 49, 52, 0.9);	list-style: none;	clear: both;}ul{	list-style: none;}.tagcloud{	font-size: 30px;}.tagcloud a{		display: block;}#breadcrumb li {	display: inline-block;	margin-left: 15px;			}

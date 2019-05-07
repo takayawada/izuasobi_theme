@@ -41,7 +41,7 @@
     </div>
 
     <div id="sidebar">
-    	<div class="side">
+    	<div class="side ">
 	       	<?php dynamic_sidebar(1); ?>
 	       	<?php dynamic_sidebar(2); ?>
 	    </div>   	
