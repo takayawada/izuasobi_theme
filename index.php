@@ -49,7 +49,7 @@
     <div class="text-white ">
      <?php wp_nav_menu();　?>
     </div>
- <
+ 
 
    <header>
     <div class="site-title ">
@@ -60,7 +60,7 @@
 
 
          <!-- ハンバーガー -->
-      
+      <!-- 
         <?php if ( wp_is_mobile() ) : ?>
           <div id="nav-drawer">
             <input id="nav-input" type="checkbox" class="nav-unshown">
@@ -68,7 +68,7 @@
             <label class="nav-unshown" id="nav-close" for="nav-input"></label>
             <div id="nav-content">ここに中身を入れる</div>
           </div>
-        <?php endif; ?>
+        <?php endif; ?> -->
        
 
 
